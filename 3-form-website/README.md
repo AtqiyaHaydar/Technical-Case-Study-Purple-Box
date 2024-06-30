@@ -16,6 +16,7 @@
 
 ###
 <h2>Project Structure</h2>
+
 ```
 . </br>
 ├── public </br>
@@ -63,31 +64,31 @@
 <h2>Installation and Running</h2>
 To get started with this project, follow these steps:
 
-Clone the repository:
+1. Clone the repository:
 ```
 git clone https://github.com/your-username/3-form-website.git
 cd 3-form-website
 ```
 
-Install dependencies:
+2. Install dependencies:
 ```
 npm install
 ```
 
-Run the application:
+3. Run the application:
 ```
 npm start
 ```
 This will start the development server and open the application in your default web browser.
 
 
-Build for production:
+4. Build for production:
 ```
 npm run build
 ```
 This will create an optimized production build in the build directory.
 
-Run tests:
+5. Run tests:
 ```
 npm test
 ```
