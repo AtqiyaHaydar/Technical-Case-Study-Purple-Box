@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
 
-const FormData = () => {
+function FormDataPage() {
+  const formData = useSelector((state) => state.form.formData);
+
   return (
-    <div className='form-data'>
-      <h3 className='website-title'>Form Data</h3>
-      <div className='form-data-card'>
-      </div>
+    <div>
+      <h1>Form Data</h1>
+      <pre>{JSON.stringify(formData, null, 2)}</pre>
     </div>
-  )
+  );
 }
 
-export default FormData
+export default FormDataPage;

@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import '../App.css';
-
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import FormInput from '../components/FormInput';
 import formFields from '../lib/data'
+import { setFormDataActions } from '../redux/actions';
 
 function HomePage() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -86,7 +91,8 @@ function HomePage() {
     setErrors(newErrors);
 
     if (formValid) {
-      console.log('Form submitted:', formData);
+      dispatch(setFormDataActions(formData));
+      navigate('/form-data');
     }
   };
   
@@ -107,11 +113,9 @@ function HomePage() {
             error={errors[field.name]}
           />
         ))}
-        <a href="/form-data" className='form-button'>
-          <button type="submit" className='form-button-content'>
-            Next
-          </button>
-        </a>
+        <button type="submit" className='form-button'>
+          Next
+        </button>
       </form>
     </div>
   );

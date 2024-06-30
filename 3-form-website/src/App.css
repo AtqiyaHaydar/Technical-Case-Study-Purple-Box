@@ -77,25 +77,14 @@ form {
   background: #1c1c1c;
   margin-top: 20px;
   cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .form-button:hover {
   transition: all;
   background: #282c34;
-}
-
-.form-button-content {
-  background: transparent;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  border: transparent;
-  cursor: pointer;
-}
-
-.form-button-content:hover {
-  transition: all;
-  background: transparent;
 }
 
 .error {
