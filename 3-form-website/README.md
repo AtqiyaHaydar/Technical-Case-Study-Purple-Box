@@ -66,7 +66,7 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/3-form-website.git
+git clone https://github.com/AtqiyaHaydar/Technical-Case-Study-Purple-Box.git
 cd 3-form-website
 ```
 
