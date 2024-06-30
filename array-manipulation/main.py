@@ -1,3 +1,4 @@
+# main.py
 from typing import List
 
 class Solution:
@@ -14,7 +15,7 @@ class Solution:
 solution = Solution()
 
 nums_input = input("Enter the list of number (separated by spaces): ")
-target = int(input("Entre the target: "))
+target = int(input("Enter the target: "))
 
 nums = [int(x) for x in nums_input.split()]
 
