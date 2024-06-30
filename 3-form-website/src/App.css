@@ -19,7 +19,8 @@ form {
   border-radius: 15px; 
   margin-bottom: 100px;
   padding: 36px 32px;
-  width: 500px;
+  width: 80%; /* Lebar 90% untuk layar kecil */
+  max-width: 500px; /* Batas maksimal lebar */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -38,7 +39,8 @@ form {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 15px; 
   padding: 20px 20px;
-  width: 500px;
+  width: 80%; /* Lebar 90% untuk layar kecil */
+  max-width: 500px; /* Batas maksimal lebar */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -59,12 +61,12 @@ form {
 }
 
 .form-data-value {
-  color: white
+  color: white;
 }
 
 .website-title {
   text-align: center;
-  font-size: 48px;
+  font-size: 32px; /* Ukuran font lebih kecil untuk layar kecil */
   color: white;
   margin: 20px 0px;
 }
@@ -112,4 +114,19 @@ form {
   color: #cc0033; 
   font-weight: 400;
   margin-top: 4px;
+}
+
+/* Media Query untuk ukuran sm dan lebih besar */
+@media (min-width: 640px) {
+  .website-title {
+    font-size: 48px;
+  }
+
+  .form-data-card, form {
+    width: 500px;
+  }
+
+  .form-data-card {
+    padding: 30px;
+  }
 }
