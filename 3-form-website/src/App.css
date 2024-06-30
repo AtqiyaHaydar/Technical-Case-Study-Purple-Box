@@ -19,9 +19,10 @@ form {
   border-radius: 15px; 
   margin-bottom: 100px;
   padding: 36px 32px;
-  width: 80%; /* Lebar 90% untuk layar kecil */
-  max-width: 500px; /* Batas maksimal lebar */
+  width: 80%; 
+  max-width: 500px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 700ms ease-in-out;
 }
 
 .form-data {
@@ -39,9 +40,10 @@ form {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 15px; 
   padding: 20px 20px;
-  width: 80%; /* Lebar 90% untuk layar kecil */
-  max-width: 500px; /* Batas maksimal lebar */
+  width: 80%;
+  max-width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 700ms ease-in-out;
 }
 
 .form-data-item {
@@ -66,9 +68,10 @@ form {
 
 .website-title {
   text-align: center;
-  font-size: 32px; /* Ukuran font lebih kecil untuk layar kecil */
+  font-size: 32px;
   color: white;
   margin: 20px 0px;
+  animation: fadeInUp 500ms ease-in-out;
 }
 
 .form-item {
@@ -116,7 +119,6 @@ form {
   margin-top: 4px;
 }
 
-/* Media Query untuk ukuran sm dan lebih besar */
 @media (min-width: 640px) {
   .website-title {
     font-size: 48px;
@@ -128,5 +130,16 @@ form {
 
   .form-data-card {
     padding: 30px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
