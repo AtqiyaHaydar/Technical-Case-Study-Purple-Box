@@ -8,16 +8,15 @@
 ###
 
 <h3>Features</h3>
-<p>- Form validation for various input types</p>
-<p>- State management with Redux</p>
-<p>- Navigation with React Router</p>
-<p>- Responsive design with media queries</p>
-<p>- Animations for a better user experience</p>
+<p>• Form validation for various input types</p>
+<p>• State management with Redux</p>
+<p>• Navigation with React Router</p>
+<p>• Responsive design with media queries</p>
+<p>• Animations for a better user experience</p>
 
 ###
 
 <h3>Project Structure</h3>
-```
 .
 ├── public
 │   ├── index.html
@@ -31,8 +30,9 @@
 │   ├── lib
 │   │   └── data.js
 │   ├── redux
-│   │   ├── store.js
-│   │   └── formSlice.js
+│   │   ├── actions.js
+│   │   ├── reducers.js
+│   │   └── store.js
 │   ├── App.css
 │   ├── App.js
 │   ├── index.js
@@ -40,4 +40,13 @@
 ├── package.json
 └── README.md
 
-```
+<h3>Dependencies</h3>
+<p>The project uses the following dependencies:</p>
+
+<p>• React: A JavaScript library for building user interfaces.</p>
+<p>• React DOM: The entry point of the DOM-related rendering paths.</p>
+<p>• React Redux: Official React bindings for Redux.</p>
+<p>• React Router DOM: Declarative routing for React web applications.</p>
+<p>• Redux: A predictable state container for JavaScript apps.</p>
+<p>• Testing Library (Jest, React, User Event): Tools for testing React components.</p>
+<p>• Web Vitals: A library for measuring essential web vitals.</p>
