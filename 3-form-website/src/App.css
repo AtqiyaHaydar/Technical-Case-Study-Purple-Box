@@ -42,6 +42,26 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.form-data-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.form-data-item:last-child {
+  border-bottom: none;
+}
+
+.form-data-key {
+  font-weight: 600;
+  color: white;
+}
+
+.form-data-value {
+  color: white
+}
+
 .website-title {
   text-align: center;
   font-size: 48px;

@@ -1,15 +1,22 @@
-import React from 'react';
+import React from 'react'
 import { useSelector } from 'react-redux';
 
-function FormDataPage() {
+const FormData = () => {
   const formData = useSelector((state) => state.form.formData);
 
   return (
-    <div>
-      <h1>Form Data</h1>
-      <pre>{JSON.stringify(formData, null, 2)}</pre>
+    <div className='form-data'>
+      <h3 className='website-title'>Form Data</h3>
+      <div className='form-data-card'>
+        {Object.entries(formData).map(([key, value], index) => (
+          <div key={index} className='form-data-item'>
+            <span className='form-data-key'>{key} :</span>
+            <span className='form-data-value'> {value}</span>
+          </div>
+        ))}
+      </div>
     </div>
-  );
+  )
 }
 
-export default FormDataPage;
+export default FormData

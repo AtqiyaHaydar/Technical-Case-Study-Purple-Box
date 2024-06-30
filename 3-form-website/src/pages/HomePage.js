@@ -96,7 +96,6 @@ function HomePage() {
     }
   };
   
-  
   return (
     <div className="App">
       <h2 className='website-title'>A Website Form</h2>
