@@ -75,21 +75,18 @@ cd 3-form-website
 npm install
 ```
 
-3. Run the application:
+3. Run the application (This will start the development server and open the application in your default web browser.)
 ```
 npm start
 ```
-This will start the development server and open the application in your default web browser.
 
 
-4. Build for production:
+4. Build for production (This will create an optimized production build in the build directory.)
 ```
 npm run build
 ```
-This will create an optimized production build in the build directory.
 
-5. Run tests:
+5. Run tests (This will run the tests defined in the project.)
 ```
 npm test
 ```
-This will run the tests defined in the project.
