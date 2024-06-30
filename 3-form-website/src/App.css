@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background: linear-gradient(to bottom right, #ff00d4, #00ddff);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -15,7 +22,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +33,38 @@
 
 .App-link {
   color: #61dafb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 15px; 
+  width: 50%;
+}
+
+.website-title {
+  text-align: center;
+  font-size: 48px;
+  color: white;
+}
+
+.form-item {
+  width: 75%;
+}
+
+.form-title {
+  text-align: start;
+  font-weight: 600;
+}
+
+.form-input {
+  padding: 16px 16px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
