@@ -107,9 +107,11 @@ function HomePage() {
             error={errors[field.name]}
           />
         ))}
-        <button type="submit" className='form-button'>
-          Next
-        </button>
+        <a href="/form-data" className='form-button'>
+          <button type="submit" className='form-button-content'>
+            Next
+          </button>
+        </a>
       </form>
     </div>
   );

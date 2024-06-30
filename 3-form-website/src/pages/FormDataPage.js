@@ -2,7 +2,11 @@ import React from 'react'
 
 const FormData = () => {
   return (
-    <div>FormData</div>
+    <div className='form-data'>
+      <h3 className='website-title'>Form Data</h3>
+      <div className='form-data-card'>
+      </div>
+    </div>
   )
 }
 
