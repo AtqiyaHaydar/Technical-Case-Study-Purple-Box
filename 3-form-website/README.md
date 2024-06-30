@@ -18,28 +18,28 @@
 <h2>Project Structure</h2>
 
 ```
-. </br>
-├── public </br>
-│   ├── index.html </br>
-│   └── ... </br>
-├── src </br>
-│   ├── components </br>
-│   │   └── FormInput.js </br>
-│   ├── pages </br>
-│   │   ├── HomePage.js </br>
-│   │   └── FormData.js </br>
-│   ├── lib </br>
-│   │   └── data.js </br>
-│   ├── redux </br>
-│   │   ├── actions.js </br>
-│   │   ├── reducers.js </br>
-│   │   └── store.js </br>
-│   ├── App.css </br>
-│   ├── App.js </br>
-│   ├── index.js </br>
-│   └── ... </br>
-├── package.json </br>
-└── README.md </br>
+.
+├── public 
+│   ├── index.html 
+│   └── ... 
+├── src 
+│   ├── components 
+│   │   └── FormInput.js 
+│   ├── pages 
+│   │   ├── HomePage.js 
+│   │   └── FormData.js 
+│   ├── lib 
+│   │   └── data.js 
+│   ├── redux 
+│   │   ├── actions.js 
+│   │   ├── reducers.js 
+│   │   └── store.js
+│   ├── App.css 
+│   ├── App.js 
+│   ├── index.js 
+│   └── ... 
+├── package.json 
+└── README.md 
 ```
 
 ###
