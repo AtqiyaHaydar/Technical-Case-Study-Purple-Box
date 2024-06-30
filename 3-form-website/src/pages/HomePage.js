@@ -1,7 +1,8 @@
-// App.js
 import React, { useState } from 'react';
 import '../App.css';
+
 import FormInput from '../components/FormInput';
+import formFields from '../lib/data'
 
 function HomePage() {
   const [formData, setFormData] = useState({
@@ -89,64 +90,23 @@ function HomePage() {
     }
   };
   
+  
   return (
     <div className="App">
       <h2 className='website-title'>A Website Form</h2>
       <form onSubmit={handleSubmit}>
-        <FormInput 
-          name='name'
-          title='Name'
-          type='text'
-          value={formData.name}
-          placeholder='Enter your name..'
-          handleChange={handleChange}
-          error={errors.name}
-        />
-        <FormInput  
-          name='email'
-          title='Email'
-          type='email'
-          value={formData.email}
-          placeholder='Enter your email..'
-          handleChange={handleChange}
-          error={errors.email}
-        />
-        <FormInput 
-          name='phoneNumber'
-          title='Phone Number'
-          type='text'
-          value={formData.phoneNumber}
-          placeholder='Enter your phone number..'
-          handleChange={handleChange}
-          error={errors.phoneNumber}
-        />
-        <FormInput 
-          name='age'
-          title='Age'
-          type='text'
-          value={formData.age}
-          placeholder='Enter your age..'
-          handleChange={handleChange}
-          error={errors.age}
-        />
-        <FormInput 
-          name='password'
-          title='Password'
-          type='password'
-          value={formData.password}
-          placeholder='Enter your password..'
-          handleChange={handleChange}
-          error={errors.password}
-        />
-        <FormInput 
-          name='confirmPassword'
-          title='Confirm Password'
-          type='password'
-          value={formData.confirmPassword}
-          placeholder='Confirm Your Password..'
-          handleChange={handleChange}
-          error={errors.confirmPassword}
-        />
+        {formFields.map((field, index) => (
+          <FormInput
+            key={index}
+            name={field.name}
+            title={field.title}
+            type={field.type}
+            value={formData[field.name]}
+            placeholder={field.placeholder}
+            handleChange={handleChange}
+            error={errors[field.name]}
+          />
+        ))}
         <button type="submit" className='form-button'>
           Next
         </button>
