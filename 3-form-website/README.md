@@ -1,13 +1,13 @@
-# Website Form
+# Website Form 🌐
 
-<h2>Overview</h2>
+<h2>Overview ℹ️</h2>
 <p>
   This project is a web application that demonstrates a form with various input fields. The form validates the input and displays the submitted data on a separate page. The application uses React for the front-end, Redux for state management, and React Router for navigation.
 </p>
 
 ###
 
-<h2>Features</h2>
+<h2>Features 🚀</h2>
 <p>1. Form validation for various input types</p>
 <p>2. State management with Redux</p>
 <p>3. Navigation with React Router</p>
@@ -15,7 +15,7 @@
 <p>5. Animations for a better user experience</p>
 
 ###
-<h2>Project Structure</h2>
+<h2>Project Structure 📁</h2>
 
 ```
 .
@@ -44,7 +44,7 @@
 
 ###
 
-<h2>Dependencies</h2>
+<h2>Dependencies 📦</h2>
 <p>The project uses the following dependencies:</p>
 
 | Dependency        | Description                                          | Version  |
@@ -61,7 +61,7 @@
 
 ###
 
-<h2>Installation and Running</h2>
+<h2>Installation and Running 🛠️</h2>
 To get started with this project, follow these steps:
 
 1. Clone the repository:
